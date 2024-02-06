@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="250dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="216dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="161dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="46dp"
+        android:text="Do you Want to Drink coffe ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="205dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="48dp"
+        android:text="Do you Drink Coffe ?"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="35dp"
+        android:text="Do You Drink Coffee?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="145dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="233dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="453dp"
+        android:ems="10"
+        android:hint="@string/hinttext"
+        android:inputType="text"
+        android:text="@string/editmessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="562dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="31dp"
+        android:src="@drawable/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="134dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
